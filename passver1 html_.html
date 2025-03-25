@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Contraseñas Seguras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Contraseñas Seguras</h1>
+        <div class="form-group">
+            <label for="passwordLength">Longitud de la contraseña:</label>
+            <input type="number" id="passwordLength" value="12" min="8">
+        </div>
+        <div class="form-group">
+            <label for="includeUppercase">Incluir mayúsculas:</label>
+            <input type="checkbox" id="includeUppercase" checked>
+        </div>
+        <div class="form-group">
+            <label for="includeLowercase">Incluir minúsculas:</label>
+            <input type="checkbox" id="includeLowercase" checked>
+        </div>
+        <div class="form-group">
+            <label for="includeNumbers">Incluir números:</label>
+            <input type="checkbox" id="includeNumbers" checked>
+        </div>
+        <div class="form-group">
+            <label for="includeSymbols">Incluir símbolos:</label>
+            <input type="checkbox" id="includeSymbols" checked>
+        </div>
+        <button id="generateBtn">Generar Contraseña</button>
+        <div class="form-group">
+            <label for="password">Contraseña generada:</label>
+            <input type="text" id="password" readonly>
+        </div>
+        <button id="evaluateBtn">Evaluar Contraseña</button>
+        <div id="evaluation"></div>
+        <div id="explanation"></div>
+        <div id="bestPractices">
+            <h2>Buenas Prácticas de Contraseñas</h2>
+            <ul>
+                <li>Usa contraseñas únicas para cada cuenta.</li>
+                <li>No reutilices contraseñas.</li>
+                <li>Considera usar un administrador de contraseñas.</li>
+                <li>Activa la autenticación de dos factores (2FA) siempre que sea posible.</li>
+                <li>Mantén tu software actualizado.</li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
